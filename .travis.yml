@@ -30,7 +30,7 @@ before_script:
   - cd examples/chat/
   - npm install
   - node . &
-  - cd ../../
+  - cd ../../../
 
 script:
   - npm test
