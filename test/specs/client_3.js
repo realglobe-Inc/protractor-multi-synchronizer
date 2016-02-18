@@ -1,6 +1,6 @@
 "use strict";
 
 var synchronizer = require('../../');
-synchronizer.role = 'firefox';
+synchronizer.role = 'client_3';
 
 require('./shared_test');

@@ -1,6 +1,6 @@
 "use strict";
 
 var synchronizer = require('../../');
-synchronizer.role = 'chrome_2';
+synchronizer.role = 'client_2';
 
 require('./shared_test');

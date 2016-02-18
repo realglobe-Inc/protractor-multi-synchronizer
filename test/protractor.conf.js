@@ -11,19 +11,19 @@ exports.config = {
         {
             browserName: 'firefox',
             specs: [
-                'specs/firefox.js'
+                'specs/client_1.js'
             ]
         },
         {
             browserName: 'firefox',
             specs: [
-                'specs/chrome_1.js'
+                'specs/client_2.js'
             ]
         },
         {
             browserName: 'firefox',
             specs: [
-                'specs/chrome_2.js'
+                'specs/client_3.js'
             ]
         }
     ],
