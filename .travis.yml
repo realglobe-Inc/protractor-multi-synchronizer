@@ -1,0 +1,36 @@
+language: node_js
+sudo: false
+node_js:
+  - "4"
+  - "5"
+
+env:
+  - CXX=g++-4.8
+
+addons:
+  apt:
+    packages:
+      - g++-4.8
+  firefox: latest
+
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+install:
+  - npm install
+  - npm install -g protractor
+  - webdriver-manager update
+  - webdriver-manager start &
+
+before_script:
+  - git clone https://github.com/socketio/socket.io.git
+  - cd socket.io/
+  - npm install
+  - cd examples/chat/
+  - npm install
+  - node . &
+  - cd ../../../
+
+script:
+  - npm test
