@@ -1,5 +1,7 @@
 # protractor-multi-synchronizer
 
+![Build Status](https://travis-ci.com/realglobe-Inc/protractor-multi-synchronizer.svg?token=N9bn3XyaYHv9C82Qt4Hu&branch=master)
+
 Protractor helper lib for real-time web app.
 
 ## Installation
