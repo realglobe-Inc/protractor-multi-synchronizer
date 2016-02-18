@@ -15,13 +15,13 @@ exports.config = {
             ]
         },
         {
-            browserName: 'chrome',
+            browserName: 'firefox',
             specs: [
                 'specs/chrome_1.js'
             ]
         },
         {
-            browserName: 'chrome',
+            browserName: 'firefox',
             specs: [
                 'specs/chrome_2.js'
             ]
