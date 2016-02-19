@@ -1,6 +1,6 @@
 {
   "name": "protractor-multi-synchronizer",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Protractor helper lib for real-time web app.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,10 @@
     "multicapabilities",
     "websocket"
   ],
-  "homepage": "https://github.com/realglobe-Inc/protractor-multi-synchronizer",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/realglobe-Inc/protractor-multi-synchronizer"
+  },
   "author": "realglobe",
   "license": "Apache-2.0",
   "dependencies": {

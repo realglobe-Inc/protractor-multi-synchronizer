@@ -1,7 +1,7 @@
 "use strict";
 
-var argx = require('argx');
-var config = require('protractor-multi-synchronizer/config');
+const argx = require('argx');
+const config = require('protractor-multi-synchronizer/config');
 
 module.exports = {
     config: function() {
@@ -13,7 +13,7 @@ module.exports = {
         });
     },
     init: function() {
-        var handlerPath = 'protractor-multi-synchronizer/lib/';
+        let handlerPath = 'protractor-multi-synchronizer/lib/';
         if (!process.send) {
             handlerPath += 'parent.js'
         }
@@ -23,14 +23,14 @@ module.exports = {
         this.connection = require(handlerPath);
     },
     run: function(values, options, callback) {
-        var noop = function(){};
-        var args = argx(arguments);
+        const noop = function(){};
+        const args = argx(arguments);
         callback = args.pop('function') || noop;
         options = args.pop('object') || {};
         values = args.remain();
 
-        var onlyRoles = values;
-        var exceptRoles = [];
+        let onlyRoles = values;
+        let exceptRoles = [];
         if (options.only) {
             onlyRoles = onlyRoles.concat(options.only);
         }
@@ -47,8 +47,8 @@ module.exports = {
             options.wait = config.wait;
         }
 
-        var connection = this.connection;
-        var role = this.role;
+        const connection = this.connection;
+        const role = this.role;
         browser.call(function() {
             connection.run({wait: options.wait, callback: callback});
         }).then(noop, function(e) {

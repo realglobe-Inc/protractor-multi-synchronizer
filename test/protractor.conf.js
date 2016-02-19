@@ -1,4 +1,4 @@
-var synchronizer = require('../');
+const synchronizer = require('../');
 
 synchronizer.setConfig({
     multiplicity: 3,
