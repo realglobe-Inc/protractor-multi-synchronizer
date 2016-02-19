@@ -7,7 +7,7 @@ Protractor helper lib for real-time web app.
 ## Installation
 
 ```sh
-npm install protractor-multiple-synchronizer
+npm install protractor-multi-synchronizer
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install protractor-multiple-synchronizer
 `protractor.conf.js`
 
 ```js
-var synchronizer = require('protractor-multiple-synchronizer');
+var synchronizer = require('protractor-multi-synchronizer');
 synchronizer.setConfig({
     multiplicity: 3, // number of multiCapabilities. default is 2
     port: 8765, // socket.io port. default is 8765
@@ -61,7 +61,7 @@ exports.config = {
 ```js
 "use strict";
 
-var synchronizer = require('protractor-multiple-synchronizer');
+var synchronizer = require('protractor-multi-synchronizer');
 synchronizer.role = 'firefox';
 
 require('./shared_test');
@@ -72,7 +72,7 @@ require('./shared_test');
 ```js
 "use strict";
 
-var synchronizer = require('protractor-multiple-synchronizer');
+var synchronizer = require('protractor-multi-synchronizer');
 synchronizer.role = 'chrome';
 
 require('./shared_test');
@@ -83,7 +83,7 @@ require('./shared_test');
 ```js
 "use strict";
 
-var synchronizer = require('protractor-multiple-synchronizer');
+var synchronizer = require('protractor-multi-synchronizer');
 synchronizer.role = 'safari';
 
 require('./shared_test');
@@ -94,7 +94,7 @@ require('./shared_test');
 ```js
 "use strict";
 
-var synchronizer = require('protractor-multiple-synchronizer');
+var synchronizer = require('protractor-multi-synchronizer');
 
 describe('test for real-time chat app.', function() {
     beforeEach(function() {
