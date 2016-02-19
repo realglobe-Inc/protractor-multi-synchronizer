@@ -1,10 +1,10 @@
 "use strict";
 
-var ChatPage = function() {
-    var usernameInput = $('.usernameInput');
-    var inputMessage = $('.inputMessage');
-    var logMessages = $$('.chatArea .messages .log');
-    var chatMessages = $$('.chatArea .messages .message');
+const ChatPage = function() {
+    const usernameInput = $('.usernameInput');
+    const inputMessage = $('.inputMessage');
+    const logMessages = $$('.chatArea .messages .log');
+    const chatMessages = $$('.chatArea .messages .message');
 
     this.get = function() {
         browser.get('http://localhost:3000');

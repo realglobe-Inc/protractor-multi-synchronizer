@@ -1,10 +1,10 @@
 "use strict";
 
-var synchronizer = require('../../');
-var ChatPage = require('./chat_page');
+const synchronizer = require('../../');
+const ChatPage = require('./chat_page');
 
 describe('test for socket.io chat example.', function() {
-    var chatPage = new ChatPage();
+    const chatPage = new ChatPage();
 
     beforeEach(function() {
         synchronizer.run({wait: true}, function() {
