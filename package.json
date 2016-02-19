@@ -1,6 +1,6 @@
 {
   "name": "protractor-multi-synchronizer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Protractor helper lib for real-time web app.",
   "main": "index.js",
   "scripts": {
